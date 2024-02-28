@@ -25,25 +25,25 @@ for i in range(0,n):
 #Calcula <x>
 x = 0
 for i in range(0,n):
-    x = x + (Eixo_X[i]/Erro_Y[i])
+    x = x + (Eixo_X[i]/Erro_Y[i]**2)
 x = (1/Sig)*x
 
 #Calcula <x²>
 xsqr = 0
 for i in range(0,n):
-    xsqr = xsqr + ((Eixo_X[i]**2)/Erro_Y[i])
+    xsqr = xsqr + ((Eixo_X[i]**2)/Erro_Y[i]**2)
 xsqr = (1/Sig)*xsqr
 
 #Calcula <y>
 y = 0
 for i in range(0,n):
-    y = y + (Eixo_Y[i]/Erro_Y[i])
+    y = y + (Eixo_Y[i]/Erro_Y[i]**2)
 y = (1/Sig)*y
 
 #Calcula <xy>
 xy = 0
 for i in range(0,n):
-    xy = xy + ((Eixo_X[i]*Eixo_Y[i])/Erro_Y[i])
+    xy = xy + ((Eixo_X[i]*Eixo_Y[i])/Erro_Y[i]**2)
 xy = (1/Sig)*xy
 
 #Calcula a,b
